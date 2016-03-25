@@ -1,0 +1,12 @@
+Package: blotmat
+Type: Package
+Title: Create Symmetric Matrices From Asymmetric Matrices
+Version: 0.1.0
+Author: person("Zhian N.", "Kamvar", email = "zkamvar@gmail.com", role =
+    c("aut", "cre"))
+Maintainer: Zhian N. Kamvar <zkamvar@gmail.com>
+Description: This package will take in asymmetric square matrices and fold them
+    across the diagonal, adding up the values to create a symmetric matrix.
+License: MIT
+LazyData: TRUE
+RoxygenNote: 5.0.1
