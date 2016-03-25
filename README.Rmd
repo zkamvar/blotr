@@ -35,9 +35,21 @@ mat <- matrix(sample(c(NA, 1), 100, replace = TRUE), 10, 10)
 diag(mat) <- 0
 mat
 isSymmetric(mat)
+```
+
+The matrix is non-symmetrical! We'll make it symmetrical with `blot()`!
+
+```{r}
 blot(mat)
 isSymmetric(blot(mat))
 ```
+
+We can also choose to keep only the upper triangle if we wish:
+
+```{r}
+blot(mat, ut = TRUE)
+```
+
 
 ## Installation
 
