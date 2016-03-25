@@ -21,7 +21,7 @@ blot <- function(X, ut = FALSE, lt = FALSE){
 	}
 	lower <- X[lower.tri(X)]
 	upper <- t(X)[lower.tri(X)]
-	u <- lower | upper
+	u     <- lower | upper
 	mode(u) <- mode(X)
 	X[lower.tri(X)] <- u
 	X[upper.tri(X)] <- t(X)[upper.tri(X)]
