@@ -4,6 +4,8 @@ blotmat: Blotting matrices since 2016
 
 This package does one thing: create symmetric matrices from asymmetric matrices. It is inspired by [This tweet](https://twitter.com/algaebarnacle/status/713103252582064128).
 
+The basic idea is that you fold your matrix across the diagonal to create a symmetric matrix like an inkblot for a [Rorschach test](https://en.wikipedia.org/wiki/Rorschach_test).
+
 How do I use it?
 ----------------
 
