@@ -1,0 +1,35 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# blotmat: Blotting matrices since 2016
+
+This package does one thing: create symmetric matrices from asymmetric matrices.
+It is inspired by [This tweet](https://twitter.com/algaebarnacle/status/713103252582064128).
+
+
+## How do I use it?
+
+There is only one function called `blot()`:
+
+```{r}
+library("blotmat")
+mat <- matrix(sample(c(NA, 1), 100, replace = TRUE), 10, 10)
+diag(mat) <- 0
+mat
+isSymmetric(mat)
+blot(mat)
+isSymmetric(blot(mat))
+```
