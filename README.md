@@ -1,6 +1,6 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-blotmat: Blotting matrices since 2016
-=====================================
+blotr: Blotting matrices since 2016
+===================================
 
 This package does one thing: create symmetric matrices from asymmetric matrices. It is inspired by [This tweet](https://twitter.com/algaebarnacle/status/713103252582064128).
 
@@ -12,7 +12,7 @@ How do I use it?
 There is only one function called `blot()`:
 
 ``` r
-library("blotmat")
+library("blotr")
 set.seed(20160325)
 mat <- matrix(sample(c(NA, 1), 100, replace = TRUE), 10, 10)
 diag(mat) <- 0
@@ -71,8 +71,8 @@ blot(mat, ut = TRUE)
 Installation
 ------------
 
-You can install blotmat via devtools::
+You can install blotr via devtools::
 
 ``` r
-devtools::install_github("zkamvar/blotmat")
+devtools::install_github("zkamvar/blotr")
 ```

@@ -1,4 +1,4 @@
-Package: blotmat
+Package: blotr
 Type: Package
 Title: Create Symmetric Matrices From Asymmetric Matrices
 Version: 0.1.0
