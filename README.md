@@ -77,8 +77,8 @@ Let's generate some inkblots and visualize them:
 ``` r
 set.seed(20160326)
 mat <- matrix(NA_integer_, 100, 100)
-x   <- replicate(20, rnorm(250, mean = sample((3:7)*10, 1), 5))
-y   <- replicate(20, rnorm(250, mean = sample((3:7)*10, 1), 5))
+x   <- replicate(10, rnorm(250, mean = sample((3:7)*10, 1), 5))
+y   <- replicate(10, rnorm(250, mean = sample((3:7)*10, 1), 5))
 obs <- matrix(round(c(x, y)), ncol = 2)
 mat[obs]  <- 1L
 diag(mat) <- 0L
